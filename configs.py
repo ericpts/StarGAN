@@ -25,6 +25,8 @@ def default():
   max_iters = 12538 * 20
   max_epochs = 20
   num_iter_decay = 12538 * 10
+  d_train_repeat = 5
+
   batch_size = 16
   summary_every = 500
   checkpoint_every = 500
@@ -74,7 +76,6 @@ def relevant():
   disc_ouput_layer_cls = (2, 1, 0, nd)
   max_iters = 202599 * 20
   num_iter_decay = 202599 * 10
-  d_train_repeat = 5
 
   selected_attrs = ('Bangs', 'Eyeglasses', 'Goatee', 'Heavy_Makeup', 'Mouth_Slightly_Open', 'Mustache',
    'Narrow_Eyes', 'No_Beard', 'Wearing_Hat', 'Wearing_Lipstick')
